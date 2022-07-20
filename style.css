@@ -7,7 +7,6 @@ html,body{
 
 }
 .wrapper{
-    width: 1920px;
     margin: 0 auto;
     overflow: hidden;
     min-height: 100%;
@@ -21,8 +20,11 @@ html,body{
     height: 83px;
     top: 13px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0 475px;
+    width: 100vw;
+}
+.header-content{
     width: 970px;
+    margin: 0 auto;
 }
 .line{
     display: inline-block;
@@ -107,6 +109,8 @@ html,body{
 .main-view{
     height: 725px;
     background-image: url('img/pryamougolnik_1_8.jpg');
+    background-position: center;
+    background-size: cover;
 }
 .menu{
     height: 78px;
@@ -132,10 +136,10 @@ html,body{
     color: #000;
 }
 .menu-item:hover .menu-ref{
-    color: #fff;
+    color: rgba(0, 0, 0, 0.5);
 }
 .menu-item:hover{
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
 }
 .litle-txt{
     position: relative;
@@ -147,12 +151,13 @@ html,body{
     line-height: 48px;
     font-weight: 400;
     letter-spacing: 0.01em;
-    color: #ffffff;
+    color: #d5c0d2;
 }
 .line-pic{
     position: relative;
     top: 203px;
-    left: 918px;   
+    display: block;
+    margin: 0 auto;
 }
 .big-txt{
     text-align: center;
@@ -164,12 +169,12 @@ html,body{
     line-height: 48px;
     font-weight: 500;
     letter-spacing: 0.01em;
-    color: #ffffff;
+    color: #d5c0d2;
 }
 .share{
     position: relative;
     top: 351px;
-    left: 857px;
+    margin: 0 auto;
     width: max-content;
 
 }
@@ -180,6 +185,7 @@ html,body{
     border-radius: 50%;
     display: inline-block;
     margin: 0 4px;
+    background-color: #d5c0d2
 }
 .share-icon{
 
@@ -192,12 +198,12 @@ html,body{
 
 #about-us{
     height: 500px;
-    width: 970px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .about-content{
     height: 338px;
-    padding: 81px 0;
+    padding: 81px 30px;
 }
 .about-title{
     font-family: Poppins;
@@ -225,8 +231,8 @@ html,body{
     background-color: #f7f7f7;
 }
 .service-block{
-    width: 1000px;
-    margin-left: 458px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .service{
     height: 111px;
@@ -306,17 +312,46 @@ html,body{
     background-color :#f44336;
 }
 
+@media (max-width: 1210px) {
+    .left-block .service-pic{
+        margin-left: 20px;
+    }
+    .right-block .service-pic{
+        margin-right: 20px;  
+    }
+    .service{
+        width: 370px;
+    }
+    .about-us-pic{
+        width: 408px;
+    }
+    .header-content{
+        width: 700px;
+    }
+    .phone {
+        padding-left: 28px;
+    }
+    .mail {
+        padding-left: 8px;
+    }
+    #find-input {
+        width: 94px;
+    }
+}
 
 #our-gallery{
-    height: 890px;
+    min-height: 890px;
 }
 .game-block{
-    width: 1180px;
+    width: 1200px;
     margin: 0 auto;
+}
+@media (max-width: 1210px) {
+    .game-block { width: 610px; }
 }
 .game{
     display: inline-block;
-    padding-right: 28px;
+    padding: 14px;
     text-align: center;
 }
 .last-img{
