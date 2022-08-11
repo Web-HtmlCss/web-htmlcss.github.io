@@ -312,42 +312,12 @@ html,body{
     background-color :#f44336;
 }
 
-@media (max-width: 1210px) {
-    .left-block .service-pic{
-        margin-left: 20px;
-    }
-    .right-block .service-pic{
-        margin-right: 20px;  
-    }
-    .service{
-        width: 370px;
-    }
-    .about-us-pic{
-        width: 408px;
-    }
-    .header-content{
-        width: 700px;
-    }
-    .phone {
-        padding-left: 28px;
-    }
-    .mail {
-        padding-left: 8px;
-    }
-    #find-input {
-        width: 94px;
-    }
-}
-
 #our-gallery{
     min-height: 890px;
 }
 .game-block{
     width: 1200px;
     margin: 0 auto;
-}
-@media (max-width: 1210px) {
-    .game-block { width: 610px; }
 }
 .game{
     display: inline-block;
@@ -401,4 +371,84 @@ html,body{
     text-align: center;
     clear: both;
     margin-top: -71px;
+}
+
+@media (max-width: 1210px) {   /**/
+    .left-block .service-pic{
+        margin-left: 20px;
+    }
+    .right-block .service-pic{
+        margin-right: 20px;  
+    }
+    .service{
+        width: 370px;
+    }
+    .about-us-pic{
+        width: 408px;
+    }
+    .header-content{
+        width: 700px;
+    }
+    .phone {
+        padding-left: 28px;
+    }
+    .mail {
+        padding-left: 8px;
+    }
+    #find-input {
+        width: 94px;
+    }
+    .game-block { 
+        width: 610px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .logo-txt {
+        transform: scale(.5);
+        width: 115px;
+    }
+    .line {
+        font-size: 11px;
+    }
+    .phone {
+        padding-left: 15px;
+    }
+    .find {
+        display: none;
+    }
+
+    #about-us {
+        height: 700px;
+    }
+    .about-us-pic {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    .about-content {
+        padding: 20px;
+    }
+    .about-title {
+        text-align: center;
+    }
+
+    #services {
+        height: 950px;
+    }
+    .service {
+        height: 70px;
+        margin: 0px auto 70px;
+    }
+    .title {
+        height: 100px;
+        line-height: 100px;
+    }
+    .right-block {
+        float: none;
+    }
+
+    .game-block {
+        width: 300px;
+    }
 }
